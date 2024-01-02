@@ -5,7 +5,8 @@ import { formatSchema, handleScrollTo } from 'helpers'
 import { addOrDeleteBookmark } from 'api/requests'
 import assets from '../../../assets/index'
 import './DetailsHeader.style.scss'
-
+import html2canvas from 'html2canvas'
+import { jsPDF } from "jspdf"
 export function DetailsHeader ({ data, serverData, sanction }) {
   const FlagSVG = assets.flags[serverData?.[0]?.properties.Country?.[0]] ?? assets.GlobeSVG
   const [showAlert, setShowAlert] = useState(false)
@@ -26,6 +27,18 @@ export function DetailsHeader ({ data, serverData, sanction }) {
     }, 3000)
 
     setAlertTimer(timer)
+  }
+
+  function printDocument() {
+    const input = document.getElementById('divToPrint');
+    html2canvas(input)
+      .then((canvas) => {
+        const imgData = canvas.toDataURL('image/png');
+        const pdf = new jsPDF();
+        pdf.addImage(imgData, 'JPEG', 0, 0);
+        pdf.save("entity1.pdf");
+      })
+    ;
   }
 
   async function handleAddOrDeleteBookmark () {
@@ -75,6 +88,9 @@ export function DetailsHeader ({ data, serverData, sanction }) {
           <div className='person-details__header-wrapper'>
             <p>{data.date}</p>
             <div className='person-details__icons-wrapper'>
+              <div className="mb5">
+                <button onClick={printDocument}>Print this page to PDF</button>
+              </div>
               <div className='person-details__icons-wrapper__container'>
                 <ShareButton
                   type='detailsHeader'

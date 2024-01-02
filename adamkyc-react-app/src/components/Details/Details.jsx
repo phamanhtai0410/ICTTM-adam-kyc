@@ -163,7 +163,7 @@ export function Details ({ serverData, sectionsShowed }) {
   }, [])
 
   return (
-    <div className='person-details'>
+    <div className='person-details' id='divToPrint'>
       <div className='person-details__wrapper'>
         <DetailsHeader data={mockDetailsArray[0]} serverData={serverData} sanction={sanction} />
         {serverData?.[0].properties && (
