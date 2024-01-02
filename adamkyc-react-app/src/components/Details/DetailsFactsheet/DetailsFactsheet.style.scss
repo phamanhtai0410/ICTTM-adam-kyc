@@ -1,0 +1,114 @@
+.person-details {
+  &__factsheet {
+    display: flex;
+    width: 815px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--main-white-color);
+    box-shadow: 0 0 20px 0 rgba(13, 11, 30, 0.10);
+
+    &-column {
+      display: flex;
+      padding: 8px;
+      justify-content: space-between;
+      align-items: center;
+      align-self: stretch;
+      border-bottom: 1px solid var(--main-border-color);
+
+      &:nth-child(2n) {
+        background-color: #F1F7FD;
+      }
+
+      &__1 {
+        display: flex;
+        width: 140px;
+
+        &>p {
+          color: var(--main-heading-color);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 1.3;
+        }
+      }
+
+      &__2 {
+        display: flex;
+        width: 565px;
+        gap: 5px;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &>p {
+          color: var(----main-text-color);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+
+        &-subtext {
+          text-align: left;
+        }
+
+        &-link {
+          display: flex;
+          gap: 4px;
+          align-items: center;
+
+          &>svg {
+            fill: #0075FF;
+          }
+
+          &>p {
+            color: #0075FF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            text-decoration: underline;
+          }
+
+          &__subtext {
+            text-decoration: none !important;
+          }
+
+          &__list {
+            display: flex;
+            gap: 16px;
+            overflow: hidden;
+            flex-wrap: wrap;
+          }
+        }
+      }
+
+      &__3 {
+        display: flex;
+        width: 70px;
+
+        &-link {
+          display: flex;
+          gap: 4px;
+          align-items: flex-start;
+          color: var(--main-mute-color);
+          fill: var(--main-mute-color);
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 1.3;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &-column__background {
+      background-color: #F1F7FD;
+    }
+  }
+}

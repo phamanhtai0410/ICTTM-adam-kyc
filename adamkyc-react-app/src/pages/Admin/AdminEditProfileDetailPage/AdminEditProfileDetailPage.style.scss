@@ -1,0 +1,21 @@
+.admin-edit {
+  &__header-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__body-wrapper {
+    width: 805px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__aside-wrapper {
+    width: 395px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}

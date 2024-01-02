@@ -1,0 +1,27 @@
+.button--red {
+  background-color: red !important;
+  color: var(--main-white-color) !important;
+
+  &>svg {
+    fill: var(--main-white-color) !important;
+  }
+}
+
+.button--green {
+  background-color: green !important;
+  color: var(--main-white-color) !important;
+
+  &>svg {
+    fill: var(--main-white-color) !important;
+  }
+}
+
+.button--inner-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &>svg {
+    fill: var(--main-mute-color);
+  }
+}

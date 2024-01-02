@@ -1,0 +1,35 @@
+.backdrop-container {
+  &__modal-wrapper {
+    align-items: center;
+    background: var(--main-white-color);
+    border: 1px solid var(--main-border-color);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    max-width: 80%;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  &__header-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &__button {
+      border: none;
+      background: none;
+      display: flex;
+    }
+  }
+
+  &__body-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

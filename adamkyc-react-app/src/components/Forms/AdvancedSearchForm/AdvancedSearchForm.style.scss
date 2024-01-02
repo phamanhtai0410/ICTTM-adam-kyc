@@ -1,0 +1,136 @@
+.form {
+  width: 52%;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+
+  &-label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1 0 0;
+  }
+
+  &-label__input-field {
+    width: 300px;
+  }
+
+  &-label__input__amount {
+    width: 125px;
+    height: 36px;
+  }
+
+  &-input {
+    width: 100% !important;
+    padding: 10px !important;
+    border-radius: 4px !important;
+    border: 1px solid var(--main-border-color) !important;
+    height: 36px;
+    background-color: var(--main-white-color) !important;
+
+    &__date {
+      color: grey !important;
+    }
+  }
+
+  &-holder::after {
+    content: "";
+    background-image: url('../../../assets/svg/search-black.svg');
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    right: 9px;
+    display: block;
+    position: absolute;
+    top: 9px;
+  }
+
+  &-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    &__label-wrapper {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+    }
+  }
+
+  &-button {
+    display: flex;
+    width: 100%;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50px;
+    border: 1px solid var(--main-heading-color);
+    background-color: var(--main-white-color);
+    color: var(--main-heading-color);
+    fill: var(--main-heading-color);
+    transition: color 150ms ease-out, fill 150ms ease-out, background-color 150ms ease-out;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    margin-top: 16px;
+
+    &:hover {
+      color: var(--main-white-color);
+      fill: var(--main-white-color);
+      background-color: var(--main-heading-color);
+    }
+  }
+
+  &-text {
+    color: var(--main-heading-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3;
+
+    &--mb {
+      margin-bottom: 8px;
+    }
+  }
+
+  &-subtext {
+    color: var(--main-mute-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+
+  &-select__menu {
+    width: 100%;
+    height: 100%;
+    color: var(--main-text-color) !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.3;
+
+    &--padding {
+      padding: 10px !important;
+    }
+
+    &--reset {
+      font-size: 12px !important;
+      line-height: unset !important;
+      max-width: 100% !important;
+    }
+  }
+
+  &-range__input {
+    display: flex;
+    gap: 4px;
+
+    &-container {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}

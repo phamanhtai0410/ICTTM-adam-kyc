@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% block head %}
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        {% block styles %}
+            <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+        {% endblock %}
+
+        <title>Beneficial ownership data analysis tools</title>
+        {% endblock %}
+    </head>
+    <body>
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light bg-white d-lg-none">
+            <a class="navbar-brand fw-bolder" href="/">Beneficial ownership data analysis tools</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mt-2" id="navbarNavAltMarkup">
+              {% include 'base_nav.html' %}
+              {% block top_extra_nav %}
+              {% endblock top_extra_nav %}
+            </div>
+          </nav>
+          <div class="row">
+              <div class="col-xl-2 col-lg-3 vh-100 overflow-auto border-end border-1 d-none d-lg-block">
+                  <div class="row">
+                      <div class="col mt-2">
+                          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                              <h4 class="fw-bolder">Beneficial ownership data analysis tools</h4>
+                          </a>
+                      </div>
+                  </div>
+                  <hr/>
+
+                  {% block nav %}
+                    {% include 'base_nav.html' %}
+
+                    {% block side_extra_nav %}
+                    {% endblock side_extra_nav %}
+
+                  {% endblock nav %}
+              </div>
+              <div class="col-lg-9 col-xl-10 vh-lg-100 overflow-auto bg-light">
+                  {% block content %}{% endblock %}
+              </div>
+          </div>
+        </div>
+        {% block scripts %}
+            <!-- Optional JavaScript -->
+            {{ bootstrap.load_js() }}
+            <script>
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                   return new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+            </script>
+        {% endblock %}
+    </body>
+</html>

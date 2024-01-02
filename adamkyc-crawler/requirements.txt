@@ -1,0 +1,9 @@
+bootstrap-flask
+bs4
+flask
+markdown
+pymongo
+python-dotenv
+requests
+tqdm
+unidecode

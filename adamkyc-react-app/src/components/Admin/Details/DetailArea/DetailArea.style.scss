@@ -1,0 +1,16 @@
+.admin-detail {
+  margin-top: 24px;
+
+  &__wrapper {
+    width: 804px;
+  }
+
+  &__textarea {
+    color: var(--main-body-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 100%;
+  }
+}

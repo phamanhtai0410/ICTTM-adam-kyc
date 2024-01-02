@@ -1,0 +1,14 @@
+@import '../../styles/main';
+
+.hero-title__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.horizontal-line {
+  background-color: var(--main-border-color);
+  height: 2px;
+  width: 100%;
+}

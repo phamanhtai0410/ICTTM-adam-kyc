@@ -1,0 +1,110 @@
+@import '../Header/Header.style';
+
+.color-grey {
+  fill: var(--main-mute-color);
+  transition: fill 150ms ease-out;
+}
+
+.color-black {
+  fill: var(--main-heading-color);
+  transition: fill 150ms ease-out;
+}
+
+.btn {
+  align-items: center;
+  background-color: var(--main-whiteBG-color);
+  border: none;
+  border-radius: 50px;
+  color: var(--main-mute-color);
+  display: flex;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  gap: 8px;
+  line-height: 100%;
+  outline: none;
+  padding: 8px 12px;
+  transition: background-color 150ms ease-out, color 150ms ease-out;
+
+  &:hover {
+    background-color: var(--main-darkBG-color) !important;
+    color: var(--main-white-color) !important;
+
+    .color-grey {
+      fill: var(--main-white-color) !important;
+    }
+  }
+}
+
+.btn-search {
+  align-items: center;
+  background-color: var(--main-white-color);
+  border: 1px solid var(--main-white-color);
+  border-radius: 50px;
+  display: flex;
+  gap: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  transition: background-color 150ms ease-out, color 150ms ease-out;
+
+  &:hover {
+    background-color: var(--main-darkBG-color) !important;
+    border: 1px solid var(--main-white-color) !important;
+    color: var(--main-white-color) !important;
+
+    .color-black {
+      fill: var(--main-white-color) !important;
+    }
+  }
+}
+
+.btn-search.padding-12-24 {
+  color: var(--main-heading-color) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--main-heading-color) !important;
+  padding: 12px 24px !important;
+
+  &:hover {
+    background-color: var(--main-darkBG-color) !important;
+    border: 1px solid var(--main-white-color) !important;
+    color: var(--main-white-color) !important;
+
+    .color-black {
+      fill: var(--main-white-color) !important;
+    }
+  }
+}
+
+.btn-search.padding-16-24 {
+  gap: 16px !important;
+  padding: 16px 24px !important;
+  color: var(--main-heading-color) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--main-heading-color) !important;
+
+  &:hover {
+    background-color: var(--main-darkBG-color) !important;
+    border: 1px solid var(--main-heading-color) !important;
+    color: var(--main-white-color) !important;
+
+    .color-black {
+      fill: var(--main-white-color) !important;
+    }
+  }
+}
+
+.padding-8-12 {
+  padding: 8px 12px
+}
+
+.font-size {
+  font-size: 14px;
+}
+
+.border-black {
+  border: 1px solid var(--main-heading-color);
+  width: fit-content;
+}

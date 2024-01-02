@@ -1,0 +1,104 @@
+@import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins', 'Roboto', sans-serif;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+  --main-accent1-color: #EEF7FF;
+  --main-accent2-color: #E3DBFA;
+  --main-accent3-color: #FFEDFE;
+  --main-accent4-color: #D4F6ED;
+  --main-accent5-color: #FFE1CC;
+  --main-accent6-color: #FFE1CC;
+  --main-accent7-color: #FCC;
+  --main-accent8-color: #FBF8DC;
+  --main-accent9-color: #E6FBDC;
+  --main-accent10-color: #D4F6ED;
+  --secondary-accent7-color: #14B550;
+  --main-border-color: #B8C0C8;
+  --main-darkBG-color: #141413;
+  --drag-dash-color: #CCCCCC;
+  --main-heading-color: #141413;
+  --main-mute-color: #777F86;
+  --main-text-color: #4B5359;
+  --body-text-darkBG: #B0B0B0;
+  --main-white-color: #FFFFFF;
+  --main-whiteBG-color: #F4F4F4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0;
+}
+
+input[type='text'] {
+  line-height: inherit;
+  min-height: 0;
+  box-shadow: none;
+}
+
+img {
+  display: block;
+  height: auto;
+  margin: 0;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+.half-opacity {
+  opacity: 50%;
+}

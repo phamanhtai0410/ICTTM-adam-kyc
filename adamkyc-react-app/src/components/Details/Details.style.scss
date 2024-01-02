@@ -1,0 +1,39 @@
+.person-details {
+  display: flex;
+  width: 815px;
+
+  &__iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__dropdown {
+    display: flex;
+    width: 815px;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--main-border-color);
+    background: var(--main-darkBG-color);
+
+    &-subtext {
+      color: var(--main-white-color);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+
+    &-icon {
+      fill: var(--main-white-color);
+    }
+  }
+}

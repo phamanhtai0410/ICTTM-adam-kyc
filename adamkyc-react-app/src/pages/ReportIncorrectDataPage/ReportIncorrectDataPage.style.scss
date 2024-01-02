@@ -1,0 +1,23 @@
+.report {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 32px;
+  justify-content: center;
+
+  & > button {
+    position: absolute;
+    left: 0;
+    border: 1px solid var(--main-heading-color);
+  }
+
+  &--margin-center {
+    margin: 0 auto;
+  }
+}
+
+.form-group {
+  &__container {
+    padding-bottom: 50px;
+  }
+}

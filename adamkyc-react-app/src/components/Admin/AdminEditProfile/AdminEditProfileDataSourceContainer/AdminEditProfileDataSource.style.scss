@@ -1,0 +1,9 @@
+.admin-edit__dataSource {
+  &--no-results {
+    &>button {
+      background: none;
+      color: red;
+      border: none;
+    }
+  }
+}

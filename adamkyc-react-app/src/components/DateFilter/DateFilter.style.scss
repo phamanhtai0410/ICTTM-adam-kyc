@@ -1,0 +1,26 @@
+@import '../Filter/Filter.style';
+
+.date-filter__wrapper {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+
+.date-filter__input {
+  align-items: center;
+  border: 1px solid var(--main-border-color);
+  border-radius: 4px;
+  color: var(--main-text-color);
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.3;
+  padding: 10px;
+}
+
+.datefilter-input__label {
+  display: flex;
+  width: 128px;
+  height: 38px;
+}

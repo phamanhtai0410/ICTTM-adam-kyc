@@ -1,0 +1,39 @@
+.bods {
+  &-link {
+    display: flex;
+    width: 285px;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    transition: border 150ms ease-out;
+    gap: 16px;
+    border-radius: 25px;
+    border: 1px solid var(--main-border-color);
+
+    &__icon {
+      transition: fill 150ms ease-out;
+      fill: var(--main-mute-color);
+    }
+
+    &__subtext {
+      transition: color 150ms ease-out;
+      color: var(--main-mute-color);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%;
+    }
+
+    &:hover {
+      border: 1px solid var(--main-heading-color);
+
+      .bods-link__subtext {
+        color: var(--main-heading-color);
+      }
+
+      .bods-link__icon {
+        fill: var(--main-heading-color);
+      }
+    }
+  }
+}

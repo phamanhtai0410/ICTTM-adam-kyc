@@ -1,0 +1,41 @@
+.admin-fields {
+  width: 805px;
+
+  &--form-text {
+    color: var(--main-text-color) !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5 !important;
+  }
+
+  &--holder {
+    border-radius: 8px;
+    border: 1px solid var(--main-border-color);
+    width: fit-content;
+    overflow: hidden;
+  }
+
+  &--title {
+    &:first-of-type {
+      width: 21.6% !important;
+    }
+
+    &:nth-of-type(2) {
+      width: 72.5% !important;
+    }
+  }
+
+  &--element {
+    &:first-of-type {
+      width: 21.6% !important;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    &:nth-of-type(2) {
+      width: 72.5% !important;
+    }
+  }
+}

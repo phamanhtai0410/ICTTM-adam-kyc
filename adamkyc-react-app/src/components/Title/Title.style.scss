@@ -1,0 +1,41 @@
+.hero-title {
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: calc(40.3 / 31);
+}
+
+.hero-title__smaller {
+  color: var(--main-heading-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.quantity-counter {
+  color: var(--main-heading-color);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: calc(15.6 / 12);
+}
+
+.quantity-border {
+  align-items: center;
+  border: 1px solid var(--main-border-color);
+  border-radius: 50px;
+  display: flex;
+  padding: 4px 8px;
+}
+
+.title-wrapper__component {
+  align-items: flex-start;
+  display: flex;
+  gap: 8px;
+}
+
+.centered-text {
+  justify-content: center;
+  align-items: center;
+}

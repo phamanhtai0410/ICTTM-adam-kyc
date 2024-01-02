@@ -1,0 +1,10 @@
+__pycache__/
+build/
+env/
+venv/
+ownership_data/
+sanction_data/
+temporary/
+.env
+ownershipcrawl.log
+sanctioncrawl.log

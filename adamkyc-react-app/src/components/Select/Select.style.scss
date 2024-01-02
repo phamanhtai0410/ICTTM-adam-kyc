@@ -1,0 +1,16 @@
+.filter-select__menu {
+  align-items: center;
+  appearance: none;
+  background: url('../../assets/svg/chevron-down.svg') no-repeat;
+  background-color: var(--main-white-color) !important;
+  background-position: calc(100% - 8px) center;
+  border: 1px solid var(--main-border-color) !important;
+  border-radius: 4px !important;
+  display: flex !important;
+  justify-content: space-between;
+  padding: 8px;
+  width: 150px;
+  height: 37px;
+  font-size: 12px !important;
+  line-height: 1 !important;
+}
